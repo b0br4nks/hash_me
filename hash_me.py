@@ -32,16 +32,16 @@ if __name__ == "__main__":
 
     z = checksum(file)
     
-    print(f"{mag}[!]MD5:", f"{whi}"+hashlib.md5(z).hexdigest()),
-    print(f"{mag}[!]SHA-256:", f"{whi}"+hashlib.sha256(z).hexdigest()),
-    print(f"{mag}[!]SHA-512:", f"{whi}"+hashlib.sha512(z).hexdigest()),
+    print(f"{mag}[!]MD5:",       f"{whi}"+hashlib.md5(z).hexdigest()),
+    print(f"{mag}[!]SHA-256:",   f"{whi}"+hashlib.sha256(z).hexdigest()),
+    print(f"{mag}[!]SHA-512:",   f"{whi}"+hashlib.sha512(z).hexdigest()),
     print(f"{mag}[!]SHA-3-256:", f"{whi}"+hashlib.sha3_256(z).hexdigest()),
     print(f"{mag}[!]SHA-3-512:", f"{whi}"+hashlib.sha3_512(z).hexdigest()),
-    print(f"{mag}[!]SHA-1:", f"{whi}"+hashlib.sha1(z).hexdigest()),
-    print(f"{mag}[!]SHA-224:", f"{whi}"+hashlib.sha224(z).hexdigest()),
-    print(f"{mag}[!]SHA-384:", f"{whi}"+hashlib.sha384(z).hexdigest()),
-    print(f"{mag}[!]BLAKE2c:", f"{whi}"+hashlib.blake2s(z).hexdigest()),
-    print(f"{mag}[!]BLAKE2b:", f"{whi}"+hashlib.blake2b(z).hexdigest()),
+    print(f"{mag}[!]SHA-1:",     f"{whi}"+hashlib.sha1(z).hexdigest()),
+    print(f"{mag}[!]SHA-224:",   f"{whi}"+hashlib.sha224(z).hexdigest()),
+    print(f"{mag}[!]SHA-384:",   f"{whi}"+hashlib.sha384(z).hexdigest()),
+    print(f"{mag}[!]BLAKE2c:",   f"{whi}"+hashlib.blake2s(z).hexdigest()),
+    print(f"{mag}[!]BLAKE2b:",   f"{whi}"+hashlib.blake2b(z).hexdigest()),
 
 def print_hash():
     print("MD5:",      hashlib.md5(z).hexdigest()),
