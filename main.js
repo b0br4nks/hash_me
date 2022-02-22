@@ -6,7 +6,7 @@
 
 window.onload = function(){
     document.getElementById("s-input").value = "";
-    document.querySelector(".l-input").value = "";
+    document.querySelectorAll(".l-input").value = "";
 }
 
 let salt = CryptoJS.lib.WordArray.random(128 / 8);
