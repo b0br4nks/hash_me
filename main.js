@@ -4,6 +4,10 @@
  * Description: Hash a string using various algorithms.
  */
 
+window.onload = function(){
+    document.getElementById("s-input").innerHTML = "";
+}
+
 let salt = CryptoJS.lib.WordArray.random(128 / 8);
 
 const hash = (str, algorithm) => {
