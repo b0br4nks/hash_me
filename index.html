@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--credits and thanks to the lib below-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <title>HASH_ME</title>
+    <style>
+      body {
+        background-color: rgb(19, 21, 22);
+      }
+      .hash-me {
+        color: #a000a0;
+      }
+      .label-input,
+      input {
+        border-color: #736b5e;
+        background-color: rgb(19, 21, 22);
+        color: aqua;
+      }
+      input:focus {
+        border-color: #313131;
+        outline: none !important;
+      }
+      .l-input {
+        width: 90%;
+        color: #ffffff;
+        background-color: rgb(19, 21, 22);
+        border: 0;
+        outline: 0;
+        outline: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <pre class="hash-me">
+██   ██  █████  ███████ ██   ██         ███    ███ ███████ - GeneralNZR -
+██   ██ ██   ██ ██      ██   ██         ████  ████ ██      
+███████ ███████ ███████ ███████         ██ ████ ██ █████ - cAsperTeam -
+██   ██ ██   ██      ██ ██   ██         ██  ██  ██ ██      
+██   ██ ██   ██ ███████ ██   ██ ███████ ██      ██ ███████ - live demo (ctrl+r to empty the fields) -
+</pre
+    >
+
+    <p class="label-input">
+      Enter a string to encrypt:
+      <input
+        style="color: #ffffff"
+        type="text"
+        id="s-input"
+        maxlength="2000"
+        onchange="hash_me()"
+        placeholder="hash me"
+      />
+      <input type="button" value="CONVERT" onclick="hash_me()" />
+    </p>
+
+    <p class="label-input">
+      md5: <input class="l-input" type="text" id="md5" readonly />
+    </p>
+    <p class="label-input">
+      sha256: <input class="l-input" type="text" id="sha256" readonly />
+    </p>
+    <p class="label-input">
+      sha512: <input class="l-input" type="text" id="sha512" readonly />
+    </p>
+    <p class="label-input">
+      sha3_256: <input class="l-input" type="text" id="sha3_256" readonly />
+    </p>
+    <p class="label-input">
+      sha3_512: <input class="l-input" type="text" id="sha3_512" readonly />
+    </p>
+    <p class="label-input">
+      sha1: <input class="l-input" type="text" id="sha1" readonly />
+    </p>
+    <p class="label-input">
+      sha224: <input class="l-input" type="text" id="sha224" readonly />
+    </p>
+    <p class="label-input">
+      sha384: <input class="l-input" type="text" id="sha384" readonly />
+    </p>
+    <p class="label-input">
+      aes_256_cbc:
+      <input class="l-input" type="text" id="aes_256_cbc" readonly />
+    </p>
+    <p class="label-input">
+      ripemd160: <input class="l-input" type="text" id="ripemd160" readonly />
+    </p>
+    <p class="label-input">
+      evp_bytestokey:
+      <input class="l-input" type="text" id="evp_bytestokey" readonly />
+    </p>
+    <p class="label-input">
+      HmacMD5: <input class="l-input" type="text" id="HmacMD5" readonly />
+    </p>
+    <p class="label-input">
+      HmacSHA1: <input class="l-input" type="text" id="HmacSHA1" readonly />
+    </p>
+    <p class="label-input">
+      HmacSHA256: <input class="l-input" type="text" id="HmacSHA256" readonly />
+    </p>
+    <p class="label-input">
+      HmacSHA512: <input class="l-input" type="text" id="HmacSHA512" readonly />
+    </p>
+    <p class="label-input">
+      PBKDF2128: <input class="l-input" type="text" id="PBKDF2128" readonly />
+    </p>
+    <p class="label-input">
+      PBKDF2256: <input class="l-input" type="text" id="PBKDF2256" readonly />
+    </p>
+    <p class="label-input">
+      PBKDF2512: <input class="l-input" type="text" id="PBKDF2512" readonly />
+    </p>
+    <p class="label-input">
+      PBKDF2512_1000:
+      <input class="l-input" type="text" id="PBKDF2512_1000" readonly />
+    </p>
+    <p class="label-input">
+      DES: <input class="l-input" type="text" id="DES" readonly />
+    </p>
+    <p class="label-input">
+      rabbit: <input class="l-input" type="text" id="rabbit" readonly />
+    </p>
+    <p class="label-input">
+      RC4: <input class="l-input" type="text" id="RC4" readonly />
+    </p>
+    <p class="label-input">
+      RC4drop: <input class="l-input" type="text" id="RC4drop" readonly />
+    </p>
+    <p class="label-input">
+      base64: <input class="l-input" type="text" id="base64" readonly />
+    </p>
+    <p class="label-input">
+      latin1: <input class="l-input" type="text" id="latin1" readonly />
+    </p>
+    <p class="label-input">
+      hex: <input class="l-input" type="text" id="hex" readonly />
+    </p>
+
+    <script src="main.js"></script>
+  </body>
+</html>
