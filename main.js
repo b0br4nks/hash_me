@@ -11,11 +11,6 @@ window.onload = function(){
 
 let salt = CryptoJS.lib.WordArray.random(128 / 8);
 
-const hash = (str, algorithm) => {
-  let hash = CryptoJS.algo[algorithm].create();
-  hash.update(str);
-  return hash.finalize();
-};
 // -------------let the magic happen----------------------
 const hash_md5 = (str) => CryptoJS.MD5(str).toString();
 const hash_sha256 = (str) => CryptoJS.SHA256(str).toString();
@@ -73,6 +68,7 @@ const hash_latin1 = (str) =>
 const hash_hex = (str) =>
   CryptoJS.enc.Hex.stringify(CryptoJS.enc.Utf8.parse(str));
 // -------------------------------------------------------------------
+
 const hash_me = () => {
   const s = document.getElementById("s-input").value;
   if (s.length == 0)
