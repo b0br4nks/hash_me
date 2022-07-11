@@ -8,4 +8,4 @@ The program first ask for the file name, and then proceeds to print, in differen
 
 ![screen](./img/screen.png)
 ## License
- 🄯 copyleft all wrongs reserved
+[MIT](https://choosealicense.com/licenses/mit/)
